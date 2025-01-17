@@ -29,7 +29,7 @@ Para comenzar con el proyecto, sigue estos pasos:
 
 1. Clona el repositorio:
 
-   `[git clone https://github.com/tu-usuario/chat-app.git](https://github.com/Jhon-E/frontend_chat.git)`
+   `git clone https://github.com/Jhon-E/frontend_chat.git`
 
 2. Navega al directorio del proyecto:
 
