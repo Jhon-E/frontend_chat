@@ -75,7 +75,7 @@ const ListOfUsers = ({
           </ul>
         </section>
       ) : (
-        <h1 className="font-bold text-2xl text-center">
+        <h1 className="font-bold text-2xl text-center flex flex-col w-full justify-center items-center">
           No hay usuarios online
         </h1>
       )}

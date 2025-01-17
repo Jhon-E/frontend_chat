@@ -64,8 +64,11 @@ const Chat = () => {
     }
   };
 
+  console.log({main:messages});
+  
+
   return (
-    <div className="h-dvh w-dvw flex justify-center items-center py-6">
+    <div className="h-dvh w-dvw flex justify-evenly items-center py-6">
       <ConnnectionManager user={user.id} />
       <ListOfUsers
         people={people}

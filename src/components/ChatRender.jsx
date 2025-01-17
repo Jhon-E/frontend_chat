@@ -11,14 +11,17 @@ const ChatRender = ({
 }) => {
   const { isConnected } = useSocket(user.id);
 
+  console.log({messages});
+  
+
   return isConnected ? (
     !!targetName ? (
-      <div className="flex justify-center items-center w-dvw h-dvh">
-        <div className="mr-4 bg-base-300 rounded-lg border border-primary w-[440px] h-auto">
+      <div className="flex justify-center items-center w-full h-dvh px-12">
+        <div className="mr-4 bg-base-300 w-full rounded-lg border border-primary h-auto">
           {/* HEADER */}
           <div className=" p-6 bg-base-100 rounded-t-lg">
             <h2 className="font-semibold text-lg tracking-tight">
-              {targetName}
+              {targetName.toUpperCase()}
             </h2>
           </div>
           {/* CONTAINER MESSAGES */}
@@ -26,9 +29,9 @@ const ChatRender = ({
             {messages.map((m) =>
               m.sourceName === targetName || m.name === targetName ? (
                 m.id !== user.id ? (
-                  <ChatMessage key={m.id} position="start" content={m.msg} />
-                ) : (
                   <ChatMessage key={m.id} position="end" content={m.msg} />
+                ) : (
+                  <ChatMessage key={m.id} position="start" content={m.msg} />
                 )
               ) : null
             ) }
