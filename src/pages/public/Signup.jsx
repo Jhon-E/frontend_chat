@@ -55,7 +55,7 @@ const Signup = () => {
   return (
     <main className="flex items-center justify-evenly h-dvh">
       <form action={submitAction} className="flex flex-col w-1/4 gap-7">
-        <h1 className="font-bold text-2xl text-center">Registrarse</h1>
+        <h1 className="font-bold text-4xl text-center">Registrarse</h1>
         <label className="input input-bordered flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -108,8 +108,8 @@ const Signup = () => {
       <h1 className="text-6xl text-wrap font-bold">
         <span className=" text-secondary">Chat</span>
         <br />
-        En
-        <span className=" text-primary">Tiempo</span>
+        <span className="text-5xl">En</span>
+        <span className=" text-primary text-7xl">Tiempo</span>
         <br />
         Real
       </h1>
