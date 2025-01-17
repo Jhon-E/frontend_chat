@@ -56,8 +56,8 @@ const Login = () => {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center h-dvh">
-      <form action={submitAction} className="flex flex-col gap-7">
+    <main className="flex items-center justify-evenly h-dvh">
+      <form action={submitAction} className="flex flex-col gap-7 w-1/4">
         <h1 className="font-bold text-2xl text-center">Iniciar sesión</h1>
         <label className="input input-bordered flex items-center gap-2">
           <svg
@@ -68,7 +68,12 @@ const Login = () => {
           >
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
           </svg>
-          <input type="text" className="grow" name="name" placeholder="Nombre" />
+          <input
+            type="text"
+            className="grow"
+            name="name"
+            placeholder="Nombre"
+          />
         </label>
         <label className="input input-bordered flex items-center gap-2">
           <svg
@@ -83,7 +88,13 @@ const Login = () => {
               clipRule="evenodd"
             />
           </svg>
-          <input type="password" className="grow" name="pass" autoComplete="false" placeholder="********"/>
+          <input
+            type="password"
+            className="grow"
+            name="pass"
+            autoComplete="false"
+            placeholder="********"
+          />
         </label>
         {error ? <p className="text-error text-center">{error}</p> : null}
         {isPending ? (
@@ -106,6 +117,14 @@ const Login = () => {
           </p>
         </span>
       </form>
+      <h1 className="text-6xl text-wrap font-bold">
+        <span className=" text-secondary">Chat</span>
+        <br />
+        En
+        <span className=" text-primary">Tiempo</span>
+        <br />
+        Real
+      </h1>
     </main>
   );
 };
